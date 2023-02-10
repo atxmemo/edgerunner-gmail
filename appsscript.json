@@ -1,0 +1,31 @@
+{
+  "timeZone": "America/Chicago",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/userinfo.email"
+  ],
+  "urlFetchWhitelist": [
+    "https://api.openai.com/v1/completions"
+  ],
+  "gmail": {
+    "name": "Edgerunner",
+    "logoUrl": "https://i.ibb.co/CnHs7jN/cyperbunk-envelope-removebg-preview.png",
+    "composeTrigger": {
+        "selectActions": [
+          {
+            "runFunction": "launchCompose"
+          }
+        ]
+    },
+    "contextualTriggers": [
+      {
+        "unconditional": {},
+        "onTriggerFunction": "launchEdgerunner"
+      }
+    ],
+    "primaryColor": "#120458"
+  }
+}
